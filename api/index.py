@@ -1,11 +1,11 @@
 from flask import Flask
 from controller.alterarFormato import convert_image
-from controller.rotasTest import About, Home
+from controller.rotasTest import About
 app = Flask(__name__)
 
 @app.route('/')
 def home():
-    return Home()
+    return 'ola mundo'
 
 @app.route('/about')
 def about():
